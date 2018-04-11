@@ -30,3 +30,8 @@ bencher = "0.1"
 [[bench]]
 name = "spake2"
 harness = false
+
+[features]
+# we don't have anything extra for nightly, but this allows travis-cargo to
+# test us there, since it always adds --feature=unstable
+unstable = []
